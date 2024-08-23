@@ -36,3 +36,7 @@ form button:hover {
   cursor: pointer;
   background-color: #969696;
 }
+ul {
+  max-width: 500px;
+  margin: 1em auto;
+}
