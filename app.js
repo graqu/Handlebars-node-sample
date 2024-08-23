@@ -27,7 +27,11 @@ app.post('/', (req, res, next) => {
   res.redirect('users');
 });
 app.get('/users', (req, res, next) => {
-  res.render('users', { title: 'all Users', users: users });
+  res.render('users', {
+    title: 'all Users',
+    users: users,
+    hasUsers: users.length > 0,
+  });
 });
 
 app.use((req, res, next) => {

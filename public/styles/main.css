@@ -40,3 +40,8 @@ ul {
   max-width: 500px;
   margin: 1em auto;
 }
+.empty-list-info {
+  margin: 1em;
+  text-align: center;
+  color: #333;
+}

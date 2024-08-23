@@ -1,10 +1,14 @@
 <div class='card'>
   <h1 style='text-align: center'>Our users</h1>
-  <ul>
-    {{#each users}}
-      <li>{{this}}</li>
-    {{/each}}
-  </ul>
+  {{#if hasUsers}}
+    <ul>
+      {{#each users}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  {{else}}
+    <p class='empty-list-info'>Found no users for now...</p>
+  {{/if}}
   <a href='/'>home</a>
 
 </div>
